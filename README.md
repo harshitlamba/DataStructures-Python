@@ -1,6 +1,6 @@
 # DataStructures-Python
 This repository contains a brief overview and implementation of the most common data structures used in computer science, specifically:
-- Linked List - Singly and Doubly
+- Linked List - Single and Double
 - Stack (both array and linked list implementation)
 - Queue (both array and linked list implementation) - Simple, Circular, Priority, Deque
 - Trees (both array and linked list implementation) - Binary Tree, Binary Search Tree
