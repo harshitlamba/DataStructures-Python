@@ -91,7 +91,16 @@ class Linked_List:
             print('Modified value at index {} is {}.'.format(index, itr.data))
 
     def reverse(self):
-        pass
+        curr = self.head
+        nxt = None
+        prev = None
+        while curr:
+            nxt = curr.next_node
+            curr.next_node = prev
+            prev = curr
+            curr = nxt
+        self.head = prev
+        print('List reversed.')
 
     def traverse(self):
         if self.head is None:
@@ -131,4 +140,8 @@ ll.traverse()
 ll.remove(2)
 ll.traverse()
 ll.insert(175,3)
+ll.traverse()
+ll.reverse()
+ll.traverse()
+ll.reverse()
 ll.traverse()
